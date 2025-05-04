@@ -1,0 +1,51 @@
+.nav-links-wrapper {
+  position: relative;
+}
+
+.link-group {
+  display: flex;
+  gap: 24px;
+  position: relative;
+}
+
+.link-decorator {
+  text-decoration: none;
+}
+
+.link-text {
+  position: relative;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgb(159, 156, 149);
+}
+
+.underline {
+  position: absolute;
+  bottom: 4px;
+  height: 4px;
+  background-color: rgba(238, 99, 82, 1);
+  transition: left 0.3s ease, width 0.3s ease;
+  border-radius: 2px;
+}
+
+.underline.home {
+  left: -10px;
+  width: 60px;
+}
+
+.underline.find {
+  left: 55px;
+  width: 90px;
+}
+
+.underline.cook {
+  left: 150px;
+  width: 100px;
+}
+
+.selected {
+  color: #000;
+}

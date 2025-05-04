@@ -1,0 +1,12 @@
+:root {
+  /* DEFAULT */
+  background: rgba(240, 235, 225, 1);
+
+  /* NAVIGATION BAR */
+  --navigation-border-color: rgba(38, 37, 34, 0.24);
+}
+
+body {
+  margin: 0;
+  padding: 2% 4.5% 2% 4.5%;
+}

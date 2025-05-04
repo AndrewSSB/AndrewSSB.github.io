@@ -1,0 +1,26 @@
+.view-all-container {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.view-all-recipes-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.view-all-recipes-title {
+  display: flex;
+  justify-content: center;
+}
+
+.all-recipes-loaded {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
