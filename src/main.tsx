@@ -74,6 +74,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <Navigation />
+        <CustomBreadcrumb />
         <ChefProfile />
         <Copyright links={links} />
       </>

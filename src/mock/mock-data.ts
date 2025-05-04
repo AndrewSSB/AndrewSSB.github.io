@@ -105,6 +105,7 @@ export const recipesOfTheWeekMockData: Recipe[] = [
 
 import ScarlatescuRecipe from "../assets/scarlatescu-recipe.png";
 import BonteaRecipe from "../assets/bontea-recipe.png";
+import { Comment } from "../components/Comments";
 
 export const mockSubscriptions: Recipe[] = [
   {
@@ -146,5 +147,64 @@ export const mockSubscriptions: Recipe[] = [
     recipeTitle: "Fancy cousine",
     recipeDescription: "The fanciest thing you’ve ever seen",
     footNoteInfo: "999 Min - HARD prep - 100 serves",
+  },
+];
+
+export const commentsMockData: Comment[] = [
+  {
+    id: 1,
+    chefName: "Mist Fluffy",
+    chefTitle: "Master-Chef",
+    comment: "Jesus man, you are such a good cook <3",
+    numberOfLikes: 120,
+    numberOfDislikes: 3,
+    subComments: [
+      {
+        id: 10,
+        chefName: "Subcomments Level 1",
+        chefTitle: "Test",
+        comment: "Good stuff",
+        numberOfLikes: 13,
+        numberOfDislikes: 0,
+        subComments: [
+          {
+            id: 11,
+            chefName: "Subcomments Level 2",
+            chefTitle: "Test 2",
+            comment: "Good stuff",
+            numberOfLikes: 13,
+            numberOfDislikes: 0,
+            subComments: null,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: 2,
+    chefName: "Mister Sir",
+    chefTitle: "Master-Chef",
+    comment: "Good stuff",
+    numberOfLikes: 13,
+    numberOfDislikes: 0,
+    subComments: null,
+  },
+  {
+    id: 3,
+    chefName: "The Guy",
+    chefTitle: "Master-Chef",
+    comment: "You are a great cook",
+    numberOfLikes: 20,
+    numberOfDislikes: 11,
+    subComments: null,
+  },
+  {
+    id: 4,
+    chefName: "Random Hater",
+    chefTitle: "Master-Chef",
+    comment: "Disgusting recipe",
+    numberOfLikes: 1,
+    numberOfDislikes: 999,
+    subComments: null,
   },
 ];

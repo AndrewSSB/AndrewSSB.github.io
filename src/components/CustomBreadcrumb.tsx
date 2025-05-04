@@ -10,6 +10,8 @@ export default function CustomBreadcrumb() {
   const [searchParams] = useSearchParams();
   const title = searchParams.get("title");
   const id = searchParams.get("id");
+  const chefName = searchParams.get("chefName");
+  const chefTitle = searchParams.get("chefTitle");
 
   const items = [
     {
@@ -34,6 +36,17 @@ export default function CustomBreadcrumb() {
       title: recipe?.recipeTitle ?? "",
       href: `/view-recipe?title=${encodeURIComponent(title)}&id=${id}`,
     });
+
+    if (chefName && chefTitle) {
+      items.push({
+        title: chefName ?? "",
+        href: `/view-profile?title=${encodeURIComponent(
+          title
+        )}&id=${id}&chefName=${encodeURIComponent(
+          chefName
+        )}&chefTitle=${encodeURIComponent(chefTitle)}`,
+      });
+    }
   }
 
   return (

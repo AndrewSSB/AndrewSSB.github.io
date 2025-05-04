@@ -20,6 +20,7 @@ export default function ViewRecipe() {
   const [idParam, _] = useSearchParams();
 
   const selectedRecipeId = Number(idParam.get("id") ?? 0);
+  const categoryTitle = idParam.get("title");
 
   const selectedRecipe = recipesOfTheWeekMockData.find(
     (recipe) => recipe.id === selectedRecipeId
@@ -78,7 +79,7 @@ export default function ViewRecipe() {
               height={"38px"}
               onClick={() =>
                 navigate(
-                  `/view-profile?chefName=${selectedRecipe?.chefName}&chefTitle=${selectedRecipe?.chefTitle}`
+                  `/view-profile?title=${categoryTitle}&id=${selectedRecipeId}&chefName=${selectedRecipe?.chefName}&chefTitle=${selectedRecipe?.chefTitle}`
                 )
               }
             />
