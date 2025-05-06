@@ -27,6 +27,18 @@ const items: MenuProps["items"] = [
       </a>
     ),
   },
+  {
+    key: "3",
+    label: (
+      <a
+        target="_blank"
+        rel="Google Docs Redirect"
+        href="https://docs.google.com/presentation/d/1KgtefrCvGEk8X4HoUcQmN8sD8BrOdJVODRtdKW5nTqA/edit?usp=sharing"
+      >
+        <p className="link-text">Presentation (Docs)</p>
+      </a>
+    ),
+  },
 ];
 
 export default function NavigationLinks() {
